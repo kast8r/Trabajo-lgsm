@@ -412,6 +412,39 @@ button:hover {
     background-color: rgb(0, 0, 165);
     color: white;
 }
+
+.sobrenosotros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+.contenedor_sobrenosotros {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    
+}
+
+.contenedor_sobrenosotros img {
+    width: 45%;
+
+}
+.contenedor_sobrenosotros div {
+    width: 50%;
+    margin-right: 5%;
+    
+}
+
+.nuestrotrabajo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5%;
+    
+}
+
 @media (max-width: 600px) and (min-width:0px){
     .mas_usadas_top3 {
         align-items: center;
