@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/main.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imgs/logo_pequeño.png" alt="Logo web">
+            <p>Alcázar Hosting</p>
+        </div>
+        <ul>
+            <li onclick="location.href='index.html'">Vps</li>
+            <li onclick="location.href='faq.html'" class="selected">FAQ</li>
+            <li onclick="location.href='registro.html'">Registro</li>
+            <li onclick="location.href='sobrenosotros.html'">Sobre Nosotros</li>
+        </ul>
+    </header>
+    <article>
+        <section class="faq">
+            <div class="titulo">
+                <h1>Preguntas relacionadas con la facturación</h1>
+            </div>
+            <div class="faq_contenedor">
+
+
+                <div class="faq_elemento" onclick="Question(this)">
+                    ¿Qué monedas están disponibles? 
+                    <div id="texto" class="faq_hidden"> 
+                        Actualmente aceptamos pagos en EUR o USD. Nuestro sitio web elegirá la moneda automáticamente en función de su ubicación. Si desea cambiar eso, simplemente seleccione su moneda preferida en la esquina superior derecha de la página. La moneda que elija será la moneda establecida para su cuenta para pagos futuros también.
+                    </div>
+                </div>
+                <div class="faq_elemento" onclick="Question(this)">
+                    ¿Qué métodos de pago están disponibles?
+                    <div id="texto" class="faq_hidden"> 
+                        Para pagos en EUR: tarjeta de crédito, PayPal, Skrill, transferencias bancarias y domiciliación bancaria (para clientes que cumplan los requisitos). Para pagos en USD: PayPal y Tarjeta de Crédito.
+                        También es posible agregar su tarjeta de crédito a su billetera electrónica de PayPal o Skrill, si prefiere esa opción. No es posible pagar con criptomonedas como Bitcoin.  
+                    </div>
+                </div>
+                <div class="faq_elemento" onclick="Question(this)">
+                    ¿La moneda depende de mi ubicación?
+                    <div id="texto" class="faq_hidden"> 
+                        No, puedes elegir libremente la moneda independientemente del país en el que vivas. 
+                    </div>
+                </div>
+                <div class="faq_elemento" onclick="Question(this)">
+                    ¿Por qué los precios en USD y EUR no son exactamente iguales?
+                    <div id="texto" class="faq_hidden"> 
+                        Los tipos de cambio de divisas siguen cambiando, por lo que no hay forma de reflejar con precisión los precios en ambas monedas. Con nuestro modelo de precios en USD, nuestro objetivo es lograr la mejor estabilidad posible de nuestros precios teniendo en cuenta los cambios futuros en los tipos de cambio. Además, formateamos nuestros precios X.99 en ambas monedas, lo que también aumenta la discrepancia.  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="titulo">
+                <h1>Preguntas relacionadas con el software</h1>
+            </div>
+            <div class="faq_contenedor">
+                <div class="faq_elemento" onclick="Question(this)">
+                        Necesito soporte para el software instalado en mi Servidor
+                    <div id="texto" class="faq_hidden"> 
+                        Nuestros expertos técnicos estarán encantados de ayudarle con sus problemas de software individuales (como la instalación de software o scripts especiales, administración de bases de datos, etc.). Este servicio de 'mano remota' de nuestros profesionales de TI cuesta 25 EUR al comienzo de cada 15 minutos. Sin embargo, tenga en cuenta que no podemos garantizar la asistencia para cualquier posible problema de software que pueda experimentar, ya que nos especializamos en proporcionar infraestructura de servidor y no estamos familiarizados con todas las posibles aplicaciones que podría ejecutar en su instancia                    </div>
+                </div>
+                <div class="faq_elemento" onclick="Question(this)">
+                       Quiero reiniciar mi servidor, ¿Cómo lo hago?
+                    <div id="texto" class="faq_hidden"> 
+                        Puede realizar reinicios de sus servidores de forma gratuita en cualquier momento con solo unos pocos clics. Para hacerlo, inicie sesión en el Panel de control del cliente de Contabo y haga clic en "Control del servidor" en el menú de la izquierda si desea reiniciar un servidor dedicado. En caso de que se trate de un VPS, haga clic en "Control de VPS". Los reinicios de Servidores Virtuales Dedicados pueden iniciarse en „Control VDS“.                </div>
+                </div>
+                <div class="faq_elemento" onclick="Question(this)">
+                        ¿Hay una opción de monitoreo disponible para mi servidor?
+                    <div id="texto" class="faq_hidden"> 
+                        Sí, esa opción está disponible. Para este propósito, ofrecemos nuestro complemento 'Monitoreo completo'. Este complemento le brinda un área de inicio de sesión individual con varias funciones de monitoreo (y, si lo desea, mensajes de alerta automáticos) para su servidor. Para tener una idea de todas las funciones, lea nuestro tutorial de Monitoreo completo .                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="titulo">
+                <h1>Preguntas relacionadas con el software</h1>
+            </div>
+            <div class="faq_contenedor">
+                <div class="faq_elemento" onclick="Question(this)">
+                        Necesito soporte para el software instalado en mi Servidor
+                    <div id="texto" class="faq_hidden"> 
+                        Nuestros expertos técnicos estarán encantados de ayudarle con sus problemas de software individuales (como la instalación de software o scripts especiales, administración de bases de datos, etc.). Este servicio de 'mano remota' de nuestros profesionales de TI cuesta 25 EUR al comienzo de cada 15 minutos. Sin embargo, tenga en cuenta que no podemos garantizar la asistencia para cualquier posible problema de software que pueda experimentar, ya que nos especializamos en proporcionar infraestructura de servidor y no estamos familiarizados con todas las posibles aplicaciones que podría ejecutar en su instancia                    </div>
+                </div>
+                <div class="faq_elemento" onclick="Question(this)">
+                       Quiero reiniciar mi servidor, ¿Cómo lo hago?
+                    <div id="texto" class="faq_hidden"> 
+                        Puede realizar reinicios de sus servidores de forma gratuita en cualquier momento con solo unos pocos clics. Para hacerlo, inicie sesión en el Panel de control del cliente de Contabo y haga clic en "Control del servidor" en el menú de la izquierda si desea reiniciar un servidor dedicado. En caso de que se trate de un VPS, haga clic en "Control de VPS". Los reinicios de Servidores Virtuales Dedicados pueden iniciarse en „Control VDS“.                </div>
+                </div>
+                <div class="faq_elemento" onclick="Question(this)">
+                        ¿Hay una opción de monitoreo disponible para mi servidor?
+                    <div id="texto" class="faq_hidden"> 
+                        Sí, esa opción está disponible. Para este propósito, ofrecemos nuestro complemento 'Monitoreo completo'. Este complemento le brinda un área de inicio de sesión individual con varias funciones de monitoreo (y, si lo desea, mensajes de alerta automáticos) para su servidor. Para tener una idea de todas las funciones, lea nuestro tutorial de Monitoreo completo .                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="titulo">
+                <h1>Preguntas específicas de VPS</h1>
+            </div>
+            <div class="faq_contenedor">
+                <div class="faq_elemento" onclick="Question(this)">
+                        ¿Cómo funcionan las instantáneas?
+                    <div id="texto" class="faq_hidden"> 
+                        Nuestra serie VPS de alto rendimiento le ofrece la posibilidad de crear las llamadas "instantáneas" de su sistema. Esto significa que el estado actual de su sistema se guarda y almacena. Esta es una herramienta útil que le permite ejecutar actualizaciones de aplicaciones sin riesgos o instalar software nuevo en su sistema. En caso de que encuentre algún problema después, puede "retroceder" fácilmente su sistema a su estado anterior. Puede realizar una instantánea usted mismo a través de su Panel de control del cliente de Contabo haciendo clic en el botón "Crear instantánea". Si desea restablecer su sistema en un momento posterior, simplemente haga clic en el icono "Retroceder". Puede encontrar más información en nuestro tutorial sobre la función de instantáneas para el VPS .
+                    </div>
+                </div>
+                <div class="faq_elemento" onclick="Question(this)">
+                       ¿Es lo mismo una instantánea que una copia de seguridad del sistema?
+                    <div id="texto" class="faq_hidden"> 
+                        No, cuando crea una copia de seguridad, puede restaurar archivos o carpetas individuales. Una instantánea le permite restaurar todo el sistema únicamente. Es especialmente útil generar una instantánea en caso de que quiera probar nuevas aplicaciones. Siempre que encuentre problemas, simplemente puede restablecer su sistema a su estado anterior con solo un clic del mouse.                </div>
+                </div>
+                <div class="faq_elemento" onclick="Question(this)">
+                        ¿Puedo crear instantáneas a voluntad y almacenarlas para siempre?
+                    <div id="texto" class="faq_hidden"> 
+                        Dependiendo de su modelo de VPS de alto rendimiento , puede guardar entre una y cuatro instantáneas al mismo tiempo. Tenga en cuenta que una instantánea se eliminará automáticamente después de 30 días. Puede ver la fecha de su creación, así como la fecha de su eliminación automática en su Panel de control del cliente cuando hace clic en el ícono Instantánea.
+                        Con respecto a la reversión, tenga en cuenta: si, por ejemplo, guardó tres instantáneas y selecciona restaurar el estado del sistema desde la instantánea del medio (hablando cronológicamente), la instantánea más reciente se eliminará automáticamente. No puede volver a esa instantánea después. Solo el más antiguo todavía está disponible.  
+                    </div>
+                </div>
+                <div class="faq_elemento" onclick="Question(this)">
+                   ¿Puedo virtualizar mi VPS?
+                    <div id="texto" class="faq_hidden"> 
+                        No, nuestros servidores privados virtuales no admiten la virtualización anidada. Si necesita ejecutar sus propias máquinas virtuales, puede solicitar uno de nuestros servidores dedicados o nuestros servidores virtuales dedicados .                </div>
+                
+                    </div>
+                </div>
+        </section>
+
+    </article>
+    <footer>
+        <div id="contacto">
+            <h2>Datos de contacto</h2>
+            <p>Dirección: Av. los Institutos, S/N, 13600 Alcázar de San Juan, Cdad. Real
+                Horario: 
+            <p>Teléfono: 926 54 03 69</p>
+            <p>Provincia: Ciudad Real</p>
+        </div>
+        <div id="redes_sociales">
+            <div>
+                <h2>Nuestras redes sociales</h2>
+            </div>
+            <div id="redes_imgs">
+                <img src="https://www.ovhcloud.com/sites/default/files/2020-11/Twitter.svg" alt="" width="10%" onclick="location.href='https:&sol;&sol;twitter.com/'">
+                <img src="https://www.ovhcloud.com/sites/default/files/2020-11/Linkedin.svg" alt="" width="10%" onclick="location.href='https:&sol;&sol;www.infojobs.net/'">
+                <img src="https://www.ovhcloud.com/sites/default/files/2020-11/Facebook.svg" alt="" width="5%" onclick="location.href='https:&sol;&sol;www.facebook.com/'">
+                <img src="https://www.ovhcloud.com/sites/default/files/2021-03/Icon_Youtube_white_0.svg" alt="" width="10%" onclick="location.href='https:&sol;&sol;www.youtube.com'">
+            </div>
+        </div>
+</footer>
+</body>
+</html>

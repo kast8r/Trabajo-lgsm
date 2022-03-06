@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/main.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imgs/logo_pequeño.png" alt="Logo web">
+            <p>Alcázar Hosting</p>
+        </div>
+        <ul>
+            <li onclick="location.href='index.html'">Vps</li>
+            <li onclick="location.href='faq.html'">FAQ</li>
+            <li onclick="location.href='registro.html'" class="selected">Registro</li>
+            <li onclick="location.href='sobrenosotros.html'">Sobre Nosotros</li>
+        </ul>
+    </header>
+    <div id="contenedor_formulario">
+        <div class="formulario" id="formularioConexion">
+            <form action="index.php" method="post">
+                <h2>Ya soy cliente de Alcázar Hosting</h2>
+                <br>
+                <label for="icliente">ID de cliente o email:</label><br>
+                <input type="email" id="icliente" name="icliente"><br>
+                <label for="icontraseña">Contraseña:</label><br>
+                <input type="password" id="icontraseña" name="icontraseña" ><br><br>
+                <button type="submit">Conectar</button><br><br>
+                <a href="ayuda.html">¿No recuerda su ID de cliente o contraseña?</a>
+              </form>
+        </div>
+        <div class="formulario" id="formularioRegistro">
+            <form action="register.php" method="post">
+                <h2 >Soy nuevo en Alcázar Hosting</h2>
+                <br>
+                <label for="rnombre">Nombre:</label><br>
+                <input type="text" id="rnombre" name="rnombre"><br>
+                <label for="rapellidos">Apellidos</label><br>
+                <input type="text" id="rapellidos" name="rapellidos" ><br>
+                <label for="rcorreo">Correo electrónico</label><br>
+                <input type="text" id="rcorreo" name="rcorreo" ><br>
+                <label for="rcontraseña">Contraseña</label><br>
+                <input type="text" id="rcontraseña" name="rcontraseña" ><br><br>
+                <input type="checkbox" name="rcondiciones" id="rcondiciones">
+                <label for="rcondiciones">Acepto las Condiciones   <br></label><br>
+                <button type="submit">Crear cuenta</button>
+              </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="contacto">
+            <h2>Datos de contacto</h2>
+            <p>Dirección: Av. los Institutos, S/N, 13600 Alcázar de San Juan, Cdad. Real
+                Horario: 
+            <p>Teléfono: 926 54 03 69</p>
+            <p>Provincia: Ciudad Real</p>
+        </div>
+        <div id="redes_sociales">
+            <div>
+                <h2>Nuestras redes sociales</h2>
+            </div>
+            <div id="redes_imgs">
+                <img src="https://www.ovhcloud.com/sites/default/files/2020-11/Twitter.svg" alt="" width="10%" onclick="location.href='https:&sol;&sol;twitter.com/'">
+                <img src="https://www.ovhcloud.com/sites/default/files/2020-11/Linkedin.svg" alt="" width="10%" onclick="location.href='https:&sol;&sol;www.infojobs.net/'">
+                <img src="https://www.ovhcloud.com/sites/default/files/2020-11/Facebook.svg" alt="" width="5%" onclick="location.href='https:&sol;&sol;www.facebook.com/'">
+                <img src="https://www.ovhcloud.com/sites/default/files/2021-03/Icon_Youtube_white_0.svg" alt="" width="10%" onclick="location.href='https:&sol;&sol;www.youtube.com'">
+            </div>
+        </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@font-face {
+    font-family:lemonmilk;
+    src: url(fonts/LEMONMILK-Bold.otf);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  
+}
+
+header {
+    width: 100%;
+    background-color: rgb(0, 0, 165);
+    height:8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo {
+    width: 20%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#logo p {
+    margin-left: 10%;
+    font-family: 'lemonmilk';
+    color: white;
+    font-size: 1.0vmax;
+}
+#logo img {
+    width: 20%;
+    
+}
+
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 100%;
+   
+}
+
+
+header li{
+    height: 100%;
+    text-decoration: none;
+    font-family: 'lemonmilk';
+    font-weight: bold;
+    padding: 2%;
+    color: white;
+    background-color: rgb(0, 0, 165);
+    transition: background-color 0.8s ;
+    font-size: 1.0vmax;
+    display: flex;
+    align-items: center;
+ 
+}
+header li:hover{
+    color: black;
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+
+    transition: all 1s linear;
+}
+.selected {
+    background-color: red;
+}
+
+#mas_usadas {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 30%;
+
+    
+}
+
+#mas_usadas_contenedor {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulo {
+    width: 100%;
+    margin-top: 1%;
+    font-size: 1.0vmax;
+    text-align: center ;
+    font-family: 'lemonmilk';
+}
+
+.mas_usadas_top3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mas_usadas_prod{
+    display: flex;
+
+    flex-direction: row;
+    width: 20%;
+    padding: 0.5%;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    height: 30%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 5px 0px #000000;
+    overflow: hidden;
+    transform: scale(1);
+    transition:box-shadow 1s, background-color 1s,color 1s,transform 1s;
+    background-color: rgb(255, 255, 255);
+    
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.mas_usadas_prod:hover {
+    background-color: rgb(0, 0, 165);
+    color: white;
+    box-shadow: 0px 0px 15px 5px rgb(80, 80, 255);
+    transform: scale(1.1);
+    transition: all 3s;
+    cursor: pointer;
+}
+
+.mas_usadas_prod img{
+    width: 30%;
+}
+
+.mas_usadas_nombre {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.0vmax;
+}
+
+.mas_usadas_caract{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 0.8vmax;
+    list-style-type: square;
+}
+
+
+#razones {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#razones_contenedor {
+    height: 100%;
+    width: 90%;
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.razones_elemento {
+    width: 40%;
+    height: 40%;
+    margin: 1%;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1%;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    box-shadow: 0px 0px 5px 0px #000000;
+    font-size: 1.0vmax;
+
+    transform: scale(1);
+    transition:box-shadow 1s, background-color 1s,color 1s,transform 1s;
+}
+
+.razones_elemento:hover {
+    background-color: rgb(0, 0, 165);
+    z-index: 1;
+    color: white;
+    box-shadow: 0px 0px 15px 5px rgb(80, 80, 255);
+    transform: scale(1.2);
+    transition: all 3s;
+    cursor: pointer;
+   
+}
+
+
+.nuestros_servicios_contenedor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.nuestros_servicios_elementos {
+    width: 15%;
+    height: 10%;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    text-align: center;
+    object-fit:contain;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    
+}
+
+.nuestros_servicios_elementos img {
+    
+
+    width: 10vw;
+    height: 10vw;
+    object-fit:cover;
+
+}
+
+footer {
+    background-color: rgb(0, 0, 165);
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    color: white;
+    padding: 2%;
+    margin-top: 2%;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+
+#contacto {
+    width: 80%;
+    text-align: left;
+    font-size: 1.0vmax;
+}
+#contacto p{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+#redes_sociales {
+    width: 20%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.0vmax;
+}
+
+#redes_imgs {
+    margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
+#redes_imgs img{
+    transform: scale(1.0);
+    filter: blur(0px);
+    transition: all 1s;
+   
+}
+
+#redes_imgs img:hover {
+    cursor: pointer;
+    transform: rotateZ(-20deg) scale(1.3);
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.faq {
+    width: 100%;
+    height: 40%;
+    
+}
+
+.faq_contenedor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.faq_elemento{
+    width: 80%;
+    text-align: center;
+    border: 2px solid black;
+    padding: 0.5%;
+    margin: 0.5%;
+    font-size: 1.0vmax;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 0px #000000;
+    cursor: pointer;
+    
+    
+
+}
+
+.faq_hidden {
+    height: auto;
+    font-weight: normal;
+    color: transparent  ;
+    transition: height 0.7s, color 0.5s;
+    user-select: none; 
+    display: none;
+}
+
+.faq_active {
+   
+    height: auto;
+    color: black;
+    transition: height 0.5s, color 1.2s;
+    font-weight: normal;    
+    user-select: none; 
+}
+
+#contenedor_formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70%;
+}
+
+.formulario {
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 5px 0px #000000;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    transition: all 1s;
+    transform: scale(1.0);
+    height:fit-content;
+}
+
+.formulario h2 {
+    font-family: 'Alata', sans-serif;
+    font-size: 1.2rem;
+}
+
+.formulario:hover {
+   
+    transition: all linear 0.5s;
+    
+    transform: scale(1.1);
+}
+input[type=text], input[type=email], input[type=password]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50%;
+    height: 30px;
+    transition: all 1s;
+    
+}
+
+input[type=text]:focus , input[type=email]:focus, input[type=password]:focus {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid black;
+    transition: all 1s;
+    outline: none;
+}
+
+button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(0, 0, 165);
+    width: 10rem;
+    height: 2rem;
+    transition-duration: 0.4s;
+    font-family: 'Alata', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px 5px 5px 5px;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 165);
+    color: white;
+}
+@media (max-width: 600px) and (min-width:0px){
+    .mas_usadas_top3 {
+        align-items: center;
+        justify-content: center;
+    }
+    .mas_usadas_prod {
+        width: 50%;
+        height: 50%;
+    }
+
+    .razones_contenedor {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .razones_elemento {
+        width: 80%;
+    }
+
+    .nuestros_servicios_contenedor {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nuestros_servicios_elementos {
+        width: 45%;
+        margin: 2%;
+    }
+
+  }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+          background: #ffffff;   
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 165);
+}
+  
+ 
+::-webkit-scrollbar-thumb:hover {
+   background: rgb(41, 41, 172);    
+}
+
+
+
