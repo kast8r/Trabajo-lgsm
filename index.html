@@ -10,6 +10,17 @@
 
 </head>
 <body>
+    <div id="menubutton" onclick="document.getElementById('mobilemenu').style.display = 'flex'">
+        <p>Menu</p>
+    </div>
+    <div id="mobilemenu">
+        <ul>
+            <li onclick="location.href='index.html'" class="selected">Vps</li>
+            <li onclick="location.href='faq.html'">FAQ</li>
+            <li onclick="location.href='registro.html'">Registro</li>
+            <li onclick="location.href='sobrenosotros.html'" >Sobre Nosotros</li>
+        </ul>
+    </div>
     <header>
         <div id="logo">
             <img src="imgs/logo_pequeño.png" alt="Logo web">
@@ -22,6 +33,8 @@
             <li onclick="location.href='sobrenosotros.html'">Sobre Nosotros</li>
         </ul>
     </header>
+
+
 
     <article>
         <section id="mas_usadas">

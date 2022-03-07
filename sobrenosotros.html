@@ -11,6 +11,17 @@
     
 </head>
 <body>
+    <div id="menubutton" onclick="document.getElementById('mobilemenu').style.display = 'flex'">
+        <p>Menu</p>
+    </div>
+    <div id="mobilemenu">
+        <ul>
+            <li onclick="location.href='index.html'">Vps</li>
+            <li onclick="location.href='faq.html'">FAQ</li>
+            <li onclick="location.href='registro.html'">Registro</li>
+            <li onclick="location.href='sobrenosotros.html'" class="selected">Sobre Nosotros</li>
+        </ul>
+    </div>
     <header>
         <div id="logo">
             <img src="imgs/logo_pequeño.png" alt="Logo web">
@@ -22,7 +33,10 @@
             <li onclick="location.href='registro.html'">Registro</li>
             <li onclick="location.href='sobrenosotros.html'" class="selected">Sobre Nosotros</li>
         </ul>
+
     </header>
+
+
     <article>
         <section class="sobrenosotros">
             <div class="contenedor_sobrenosotros">
@@ -40,7 +54,7 @@
         </section>
 
         <section class="nuestrotrabajo">
-            <video src="videos/hostingtrailer.mp4"  width="1200" height="775" controls></video>
+            <video id="videointroduccion" src="videos/hostingtrailer.mp4"  width="1200" height="775" controls></video>
         </section>
 
         <section class="sobrenosotros">
@@ -71,7 +85,7 @@
         </section>
     </article>
     
-    <div style="text-align: center; font-family: 'IBM Plex Sans Thai Looped', sans-serif;">
+    <div style="text-align: center; font-family: 'lemonmilk';">
         <h1>¿Dónde se encuentran nuestros <a href="https://www.iesjuanbosco.es/">servidores</a>?</h1>
         </div>
         <div style="display: flex;justify-content: center;">
